@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>github</title>
+		<script src="react-0.14.8/build/react.js"></script>
+		<script src="react-0.14.8/build/react-dom.js"></script>
+		<script src="react-0.14.8/build/browser.min.js"></script>
+	</head>
+	<body>
+		<div id="container"></div>
+
+		<script type="text/babel">
+		var HelloMessage=React.createClass({
+		render:function(){
+		return <h1>Hello {this.props.name}</h1>;
+		}
+		});
+
+		ReactDOM.render(
+		<HelloMessage name="world!"/>,
+		document.getElementById("container"));
+		</script>
+	</body>
+</html>
